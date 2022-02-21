@@ -1,0 +1,16 @@
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    RX: bytes  packets  errors  dropped overrun mcast   
+    494k       1.74k    0       0       0       0       
+    TX: bytes  packets  errors  dropped carrier collsns 
+    494k       1.74k    0       0       0       0       
+2: wlp3s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether 11:22:33:44:55:66 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.178.10/24 brd 192.168.178.255 scope global dynamic noprefixroute wlp3s0
+       valid_lft 860678sec preferred_lft 860678sec
+    RX: bytes  packets  errors  dropped overrun mcast   
+    199M       166k     0       3.05k   0       0       
+    TX: bytes  packets  errors  dropped carrier collsns 
+    5.36M      28.3k    0       0       0       0       

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Networks</h1>
+
+    <form action="haha" method="POST">
+        {% csrf_token %}
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+    {% if data %}
+        <li>{{ data }}</li>
+    {% endif %}
+
+{% endblock content %}

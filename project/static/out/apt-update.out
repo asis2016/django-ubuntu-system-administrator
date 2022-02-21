@@ -1,0 +1,15 @@
+Hit:1 http://de.archive.ubuntu.com/ubuntu focal InRelease
+Ign:2 http://dl.google.com/linux/chrome-remote-desktop/deb stable InRelease
+Hit:3 http://de.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:4 http://dl.google.com/linux/chrome-remote-desktop/deb stable Release
+Hit:5 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:6 https://brave-browser-apt-release.s3.brave.com stable InRelease
+Get:7 http://de.archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Hit:8 https://repo.nordvpn.com//deb/nordvpn/debian stable InRelease
+Hit:9 http://packages.microsoft.com/repos/code stable InRelease
+Hit:10 https://desktop-download.mendeley.com/download/apt stable InRelease
+Fetched 108 kB in 2s (59,3 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+10 packages can be upgraded. Run 'apt list --upgradable' to see them.

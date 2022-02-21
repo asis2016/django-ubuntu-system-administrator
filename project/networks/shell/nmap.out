@@ -1,0 +1,82 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2022-02-06 16:34 CET
+Nmap scan report for fritz.box (192.168.178.1)
+Host is up (0.16s latency).
+Other addresses for fritz.box (not scanned): fd00::9a9b:cbff:fea1:2d79
+Not shown: 992 closed ports
+PORT     STATE SERVICE
+53/tcp   open  domain
+80/tcp   open  http
+139/tcp  open  netbios-ssn
+443/tcp  open  https
+445/tcp  open  microsoft-ds
+5060/tcp open  sip
+5357/tcp open  wsdapi
+8181/tcp open  intermapper
+MAC Address: 98:9B:CB:A1:2D:79 (AVM Audiovisuelles Marketing und Computersysteme GmbH)
+
+Nmap scan report for Aruns-MBP.fritz.box (192.168.178.23)
+Host is up (0.32s latency).
+All 1000 scanned ports on Aruns-MBP.fritz.box (192.168.178.23) are filtered
+MAC Address: C4:B3:01:D2:05:DD (Apple)
+
+Nmap scan report for Arun-Paudyal.fritz.box (192.168.178.24)
+Host is up (0.55s latency).
+All 1000 scanned ports on Arun-Paudyal.fritz.box (192.168.178.24) are closed
+MAC Address: 64:A2:F9:7E:42:CC (OnePlus Technology (Shenzhen))
+
+Nmap scan report for 192.168.178.102
+Host is up (0.077s latency).
+All 1000 scanned ports on 192.168.178.102 are closed
+MAC Address: 98:F6:21:B4:C8:2C (Unknown)
+
+Nmap scan report for Shehabs-Galaxy-Note9.fritz.box (192.168.178.111)
+Host is up (0.13s latency).
+All 1000 scanned ports on Shehabs-Galaxy-Note9.fritz.box (192.168.178.111) are closed
+MAC Address: 86:D5:73:64:88:A2 (Unknown)
+
+Nmap scan report for ASUS.fritz.box (192.168.178.112)
+Host is up (0.28s latency).
+Not shown: 998 filtered ports
+PORT     STATE SERVICE
+1042/tcp open  afrog
+1043/tcp open  boinc
+MAC Address: 38:00:25:2D:28:55 (Intel Corporate)
+
+Nmap scan report for Redmi-Note-8-Pro.fritz.box (192.168.178.136)
+Host is up (0.32s latency).
+All 1000 scanned ports on Redmi-Note-8-Pro.fritz.box (192.168.178.136) are closed
+MAC Address: 04:C8:07:36:9F:32 (Xiaomi Communications)
+
+Nmap scan report for SUDAN-PC.fritz.box (192.168.178.139)
+Host is up (0.19s latency).
+All 1000 scanned ports on SUDAN-PC.fritz.box (192.168.178.139) are filtered
+MAC Address: A4:B1:C1:9E:30:72 (Unknown)
+
+Nmap scan report for shrawap.fritz.box (192.168.178.140)
+Host is up (0.036s latency).
+All 1000 scanned ports on shrawap.fritz.box (192.168.178.140) are closed
+MAC Address: 68:07:15:19:14:A5 (Intel Corporate)
+
+Nmap scan report for raspberrypi.fritz.box (192.168.178.167)
+Host is up (0.19s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+MAC Address: E4:5F:01:84:FA:BC (Unknown)
+
+Nmap scan report for ubuntu.fritz.box (192.168.178.168)
+Host is up (0.073s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+MAC Address: DC:A6:32:E1:FE:EB (Raspberry Pi Trading)
+
+Nmap scan report for lion.fritz.box (192.168.178.184)
+Host is up (0.0000070s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 256 IP addresses (12 hosts up) scanned in 792.69 seconds

@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col">
+        <h1>Apache error logs</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <ol class="breadcrumb my-4">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Network</a></li>
+          <li class="breadcrumb-item"><a href="#">Apache2</a></li>
+          <li class="breadcrumb-item active">Apache error logs </li>
+        </ol>
+    </div>
+    <div class="col">
+
+    </div
+</div>
+
+
+<div class="row">
+    <div class="col">
+        <div>
+            <ol>
+                {% for log in logs %}
+                    <li class="list-unstyled">{{ log }}</li>
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

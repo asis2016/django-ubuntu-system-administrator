@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+<style>
+    .traceroute-form-row .col-2{
+        display:flex;
+        align-items:end;
+    }
+
+    .traceroute-form-row .col-2 .btn{
+        height: 58px;
+    }
+</style>
+{% endblock styles %}
+
+{% block content %}
+<div class="row">
+    <div class="col">
+        <h1>Traceroute</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <ol class="breadcrumb my-4">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Network</a></li>
+          <li class="breadcrumb-item active">Traceroute</li>
+        </ol>
+    </div>
+    <div class="col">
+
+    </div>
+</div>
+
+<!-- form -->
+<div class="row traceroute-form-row">
+    <div class="col-6">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div class="form-group row">
+                <div class="col-10">
+                    <label class="form-label mt-4">traceroute host</label>
+                    <div class="form-floating">
+                      <input name='url' type="text" class="form-control" id="floatingInput" placeholder="www.google.com">
+                      <label for="floatingInput">Enter traceroute host</label>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <button type="submit" class="btn btn-success btn-block">enter</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- result -->
+<div class="row">
+    <div class="col">
+        <hr>
+        <ul>
+        {% if logs %}
+            {% for log in logs %}
+                <li class="list-unstyled">{{ log }}</li>
+            {% endfor %}
+        {% endif %}
+        </ul>
+
+    </div>
+</div>
+
+{% endblock content %}

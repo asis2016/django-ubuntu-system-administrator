@@ -1,0 +1,224 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<div class="row">
+    <div class="col">
+        <div class="alert alert-warning">
+            <!-- todo -->
+            $ df -h
+            <p class="text-primary mb-0">
+                10 packages can be upgraded. Run 'apt list --upgradable' to see them.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Top info -->
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                # whoami <br>
+                {{ whoami }}
+            </div>
+        </div>
+    </div>
+     <div class="col">
+        <div class="card">
+            yo
+        </div>
+    </div>
+     <div class="col">
+        <div class="card">
+            <div class="card-body">
+                # curl ifconfig.me <br>
+                {{ curl_ifconfig_dot_me }}
+            </div>
+        </div>
+    </div>
+     <div class="col">
+        <div class="card">
+            yo
+        </div>
+    </div>
+</div>
+
+<section class="my-4">
+    <div class="row">
+        <div class="col">
+    a
+        </div>
+
+        <!-- neofetch -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <ul>
+                        <li class="list-unstyled">
+                            lion@lion
+                        </li>
+
+                        <li>
+                            {{ yo.kernel }}
+                        </li>
+                        <li>
+                            OS: Ubuntu 20.04.3 LTS x86_64
+                        </li>
+                        <li>
+                            Kernel: {{ system_info.kernel }}
+                        </li>
+                        <li>
+                            Uptime: {{ system_info.uptime }}
+                        </li>
+                        <li>
+                            Packages: 1877 (dpkg), 15 (snap)
+                        </li>
+                        <li>
+                            Shell: bash 5.0.17
+                        </li>
+                        <li>
+                            Resolution: 1920x1080, 1920x1080
+                        </li>
+                        <li>
+                            DE: GNOME
+                        </li>
+                        <li>
+                            CPU: AMD Ryzen 5 5500U with Radeon Graphics (12) @ 2.100GHz
+                        </li>
+                        <li>
+                            GPU: AMD ATI 04:00.0 Device 164c
+                        </li>
+                        <li>
+                            Memory: 4122MiB / 14810MiB
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="my-4">
+    <div class="row">
+        <div class="col">
+    a
+        </div>
+
+        <!-- neofetch -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <ul>
+                        <li class="list-unstyled">
+                            {{ apache_is_active }}
+                        </li>
+                        <li>
+                            OS: Ubuntu 20.04.3 LTS x86_64
+                        </li>
+                        <li>
+                            Kernel: 5.13.0-28-generic
+                        </li>
+                        <li>
+                            Uptime: 4 hours, 48 mins
+                        </li>
+                        <li>
+                            Packages: 1877 (dpkg), 15 (snap)
+                        </li>
+                        <li>
+                            Shell: bash 5.0.17
+                        </li>
+                        <li>
+                            Resolution: 1920x1080, 1920x1080
+                        </li>
+                        <li>
+                            DE: GNOME
+                        </li>
+                        <li>
+                            CPU: AMD Ryzen 5 5500U with Radeon Graphics (12) @ 2.100GHz
+                        </li>
+                        <li>
+                            GPU: AMD ATI 04:00.0 Device 164c
+                        </li>
+                        <li>
+                            Memory: 4122MiB / 14810MiB
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="my-4">
+
+    <div class="row mb-4">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header">
+                    $ sudo du / -h -d 1 > out/du.out
+                </div>
+                <div class="card-body">
+                    <pre>{{ disk_usage }}</pre>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header">
+                    $ free -ht
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <pre>{{ free_memory_data }}</pre>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header">
+                    $ last -n 5 --dns
+                </div>
+                <div class="card-body">
+                    <pre>{{ last_logged_users }}</pre>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header">
+                    $ route
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <pre>{{ routing_table }}</pre>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="my-4">
+    <div class="row">
+        {% include 'df.html' %}
+        {% include 'ip.html' %}
+    </div>
+</section>
+
+<section class="my-4">
+    <div class="row">
+        {% include 'iw_config.html' %}
+    </div>
+</section>
+{% endblock content %}
